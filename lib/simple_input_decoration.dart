@@ -20,6 +20,7 @@ class SimpleInputDecoration extends InputDecoration {
     super.hintTextDirection,
     super.hintMaxLines,
     super.hintFadeDuration,
+    super.maintainHintHeight,
     super.error,
     super.errorText,
     super.errorStyle,
@@ -120,6 +121,7 @@ class SimpleInputDecoration extends InputDecoration {
     String? semanticCounterText,
     bool? alignLabelWithHint,
     BoxConstraints? constraints,
+    bool? maintainHintHeight,
   }) =>
       SimpleInputDecoration(
         icon: icon ?? this.icon,
@@ -137,6 +139,7 @@ class SimpleInputDecoration extends InputDecoration {
         hintTextDirection: hintTextDirection ?? this.hintTextDirection,
         hintMaxLines: hintMaxLines ?? this.hintMaxLines,
         hintFadeDuration: hintFadeDuration ?? this.hintFadeDuration,
+        maintainHintHeight: maintainHintHeight ?? this.maintainHintHeight,
         error: error ?? this.error,
         errorText: errorText ?? this.errorText,
         errorStyle: errorStyle ?? this.errorStyle,
